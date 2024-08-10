@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:rgb(130, 129, 129);
+            text-align: center;
+            background: url("download.jpg") no-repeat;
+            background-size: 2500px;
+            
+           
+        }
+        .container{
+            display: flex;
+            height: 70vmin;
+
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .con-game{
+            display: flex;
+            flex-wrap: wrap;
+
+            height: 60vmin;
+            width: 60vmin;
+
+            justify-content: center;
+            align-items: center;
+
+            gap: 1.5vmin;
+            position: absolute;
+            /* position: fixed; */
+        }
+        .box{
+            background-color: white;
+            height: 18vmin;
+            width: 18vmin;
+            border-radius: 20px;
+border: none;
+            color: black;
+            font-size: 12vmin;
+            box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            z-index: 1;
+            opacity: 0.5;
+        }
+        .back{
+            /* position:fixed; */
+            height: 70vmin;
+            width: 70vmin;
+            background-image: url("download.jpg");
+            border-radius: 20px;
+        }
+        h1{
+            margin-top: 20px;
+            font-size: 3rem;
+            font-family: arial;
+            color: blanchedalmond;
+        }
+        .reset-btn{
+            background-image: url("download.jpg");
+            border-radius: 11px;
+          border: none;
+          margin: 20px;
+            padding: 1.45rem;
+            color: antiquewhite;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            opacity: 2;
+
+            border: 3px solid transparent;
+        }
+
+.new-btn:hover{
+    border: 2px solid rgb(158, 96, 96);
+
+}
+.reset-btn:hover{
+    border: 2px solid rgb(158, 96, 96);
+
+}
+        #re-btn{
+    opacity: 0.5;
+    font-weight: 10;
+}
+        .new-btn{
+            background-image: url("download.jpg");
+            border-radius: 11px;
+          border: none;
+          margin: 20px;
+            padding: 1.45rem;
+            color: antiquewhite;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            opacity: 2;
+
+            border: 3px solid transparent;
+        }
+
+        #win{
+            color: rgb(80, 34, 41);
+            font-size: 40px;
+        }
+        .msg{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .hide{
+            display: none; 
+        }
+      
+
+        @media screen and (max-width:479px){
+             body{
+                background-size: 2500px;
+             }
+        }
+        @media screen and (max-width:900px){
+             body{
+                background-size: 2500px;
+             }
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <div class="msg hide">
+        <p id="win">Winner</p>
+        <button class="new-btn">New Game</button>
+    </div>
+
+    <h1>Tic Tac Teo</h1>
+    <div class="container con-hide">
+        <div class="back"></div>
+
+        <div class="con-game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        
+    </div>
+    </div>
+
+    <button class="reset-btn"><p id="re-btn">Reset Game</p></button>
+
+
+    <script src="app2.js"></script>
+</body>
+</html>
